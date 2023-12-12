@@ -1,0 +1,161 @@
+.card {
+  //functionality
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 32rem;
+  margin-top: 50px;
+
+  &__side {
+    height: 32rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: $code-box-shadow;
+
+    &--front {
+      background-color: $color-white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-bo-light,
+          $color-bo-dark
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-beep-light,
+          $color-beep-dark
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-bing-light,
+          $color-bing-dark
+        );
+      }
+      &-4 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-bang-light,
+          $color-bang-dark
+        );
+      }
+      &-5 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-boop-light,
+          $color-boop-dark
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  //front side styling
+
+  &__picture {
+    background-size: cover;
+    height: 100%;
+    background-blend-mode: screen;
+    // clip-path: polygon(0 0, 100 * 0, 100% 85%, 0 100%);
+    border-radius: 5px;
+
+    &--1 {
+      background-image: 
+    //   linear-gradient(
+    //       to right bottom,
+    //       $color-bo-light,
+    //       $color-bo-dark
+    //     ),
+        url(../img/bo.png);
+    }
+    &--2 {
+      background-image: 
+      //   linear-gradient(
+      //       to right bottom,
+      //       $color-bo-light,
+      //       $color-bo-dark
+      //     ),
+        url(../img/beep.png);
+    }
+    &--3 {
+      background-image: 
+        //   linear-gradient(
+        //       to right bottom,
+        //       $color-bo-light,
+        //       $color-bo-dark
+        //     ),
+        url(../img/bing.png);
+      background-position-x: -50px;
+    }
+    &--4 {
+      background-image: 
+        //   linear-gradient(
+        //       to right bottom,
+        //       $color-bo-light,
+        //       $color-bo-dark
+        //     ),
+        url(../img/bang.png);
+    }
+    &--5 {
+      background-image: 
+        //   linear-gradient(
+        //       to right bottom,
+        //       $color-bo-light,
+        //       $color-bo-dark
+        //     ),
+        url(../img/boop.png);
+      background-position-x: -100px;
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 60%;
+  }
+
+  //back side styling
+
+  &__details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__box {
+    &-text {
+      color: $color-white;
+      font-size: 2rem;
+    }
+  }
+}

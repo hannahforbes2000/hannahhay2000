@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storybot | Christmas Code</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="img/logo.png" alt="logo" class="header__logo" />
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Emma and Joe</span>
+          <span class="heading-primary--sub"
+            >Can you crack the christmas code?</span
+          >
+        </h1>
+        <a href="#intro" class="btn btn--white btn--animated">We are ready</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 id="intro" class="heading-secondary">crack the christmas code</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="paragraph">
+              The Storybots have been given a Christmas Eve Box from Father
+              Christmas but they can't remember the code to access the place it
+              is hidden. Each Storybot was given a number and they made a puzzle
+              to help them remember it. Can you solve the puzzles to crack the
+              code and find the missing Christmas Eve box??
+            </p>
+            <input type="text" id="password-input" />
+            <button class="btn btn--txt" onclick="checkPassword()">
+              Enter the Code
+            </button>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="img/image1.jpeg"
+                alt="photo1"
+                class="composition__photo composition__photo--p1"
+              />
+              <img
+                src="img/image2.jpeg"
+                alt="photo1"
+                class="composition__photo composition__photo--p2"
+              />
+              <img
+                src="img/image3.jpeg"
+                alt="photo1"
+                class="composition__photo composition__photo--p3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-code">
+        <div class="row">
+          <div class="col-1-of-5">
+            <div class="code-box code-box-1">
+              <img
+                src="img/lock.png"
+                class="code-box-1__img"
+                onclick="checkCode1()"
+              />
+              <div class="code-box-1__popup">
+                <input type="text" class="code-box-1__popup--input" />
+                <button onclick="checkCodeA()" class="code-box-1__popup--btn">
+                  OK
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="code-box code-box-2">
+              <img
+                src="img/lock.png"
+                class="code-box-2__img"
+                onclick="checkCode2()"
+              />
+              <div class="code-box-2__popup">
+                <input type="text" class="code-box-2__popup--input" />
+                <button onclick="checkCodeB()" class="code-box-2__popup--btn">
+                  OK
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="code-box code-box-3">
+              <img
+                src="img/lock.png"
+                class="code-box-3__img"
+                onclick="checkCode3()"
+              />
+              <div class="code-box-3__popup">
+                <input type="text" class="code-box-3__popup--input" />
+                <button onclick="checkCodeC()" class="code-box-3__popup--btn">
+                  OK
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="code-box code-box-4">
+              <img
+                src="img/lock.png"
+                class="code-box-4__img"
+                onclick="checkCode4()"
+              />
+              <div class="code-box-4__popup">
+                <input type="text" class="code-box-4__popup--input" />
+                <button onclick="checkCodeD()" class="code-box-4__popup--btn">
+                  OK
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="code-box code-box-5">
+              <img
+                src="img/lock.png"
+                class="code-box-5__img"
+                onclick="checkCode5()"
+              />
+              <div class="code-box-5__popup">
+                <input type="text" class="code-box-5__popup--input" />
+                <button onclick="checkCodeE()" class="code-box-5__popup--btn">
+                  OK
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section-clues">
+        <div class="u-center-text">
+          <h2 class="heading-secondary">Some clues to help</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-5">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__details">
+                  <div class="card__box">
+                    <p class="card__box-text">
+                      You will find the clue to this number hidden someplace
+                      very hot
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__details">
+                  <div class="card__box">
+                    <p class="card__box-text">
+                      Shoes...shoes everywhere...all on top of me...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__details">
+                  <div class="card__box">
+                    <p class="card__box-text">
+                      Little cubes. With dots on. Some have numbers. Some you
+                      can use to tell a story...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--4">&nbsp;</div>
+              </div>
+              <div class="card__side card__side--back card__side--back-4">
+                <div class="card__details">
+                  <div class="card__box">
+                    <p class="card__box-text">Don't wake up Barbie!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--5">&nbsp;</div>
+              </div>
+              <div class="card__side card__side--back card__side--back-5">
+                <div class="card__details">
+                  <div class="card__box">
+                    <p class="card__box-text">
+                      Boop. Boop. Boop. Boop. Boop. (Translation: Your dad makes
+                      a stinky poo in this room.)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo.png" alt="Storybots Logo" class="footer__logo" />
+      </div>
+      <div class="row">
+        <p class="footer__copyright">
+          Built by <a href="#" class="footer__link">Hannah Hay</a> for the
+          <a href="#" class="footer__link">Christmas Eve Challenge</a> 2023
+        </p>
+      </div>
+    </footer>
+    <div class="popupWrong" id="popupWrong">
+      <div class="popupWrong__content">
+        <div class="popupWrong__left">
+          <img src="img/hap.png" class="popupWrong__img" alt="" />
+        </div>
+        <div class="popupWrong__right">
+          <h2 class="heading-secondary">SORRY BUT NO!!!</h2>
+          <h3 class="heading-tertirary"></h3>
+          <p class="popupWrong__text">
+            You have entered the wrong code. Have you found all the puzzles?
+            Have you solved them properly? Get back out there and try again!
+          </p>
+          <a href="#intro" class="btn btn--green"
+            >Now quit dilly dallying and Try again!</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="popupCorrect" id="popupCorrect">
+      <div class="popupCorrect__content">
+        <div class="popupCorrect__left">
+          <img src="img/hap.png" class="popupCorrect__img" alt="" />
+        </div>
+        <div class="popupCorrect__right">
+          <h2 class="heading-secondary">YOU DID IT!!!</h2>
+          <h3 class="heading-tertirary"></h3>
+          <p class="popupCorrect__text">
+            Well done! You really are a clever bunny! You have successfully
+            solved all the puzzles and cracked the christmas code. The Storybots
+            are very proud of you. Your hard work has reminded the Storybots
+            where they hid the Christmas Eve Box for Father Christmas. You will
+            find it in one of the cupboards in the nativity room. Well done
+            again!
+          </p>
+          <a href="#intro" class="btn btn--green">Merry Christmas!</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

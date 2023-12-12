@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+html {
+  //this defines what 1 rem is. 1rem = 10px, 10/16px = 62.65%
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1 rem = 9 px, 8/16px = 56.25%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1 rem = 8 px, 8/16px = 50%
+  }
+
+  @include respond(big-desk) {
+    font-size: 75%; //1 rem = 12 px, 12/16px = 75%
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
+input {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px $color-primary-light solid;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: $color-primary-light;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 1rem;
+  color: $color-white;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  border: none;
+}

@@ -1,0 +1,31 @@
+.section-about {
+  background-color: $color-grey-light;
+  padding: 15rem;
+  margin-top: -40vh;
+  align-items: center;
+
+  @include respond(tab-land) {
+    margin-top: -35vh;
+    padding: 10rem;
+  }
+
+  @include respond(tab-port) {
+    margin-top: -25vh;
+    padding: 5rem;
+  }
+}
+
+.section-code {
+  padding: 5rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+}
+
+.section-clues {
+  background-color: $color-grey-light;
+  padding: 5rem 0 5rem 0;
+  text-align: center;
+}
