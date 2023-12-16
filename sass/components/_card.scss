@@ -6,6 +6,13 @@
   height: 32rem;
   margin-top: 50px;
 
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__side {
     height: 32rem;
     transition: all 0.8s ease;
