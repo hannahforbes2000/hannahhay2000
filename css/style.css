@@ -344,7 +344,8 @@ body {
   align-items: center; }
   @media (max-width: 37.5em) {
     .code-box {
-      flex-direction: column; } }
+      flex-direction: column;
+      width: 80%; } }
   .code-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
