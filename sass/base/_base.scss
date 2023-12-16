@@ -40,6 +40,10 @@ input {
   text-align: center;
   box-sizing: border-box;
   border: 1px $color-primary-light solid;
+
+  @include respond(phone) {
+    font-size: 16px;
+  }
 }
 
 input:focus {

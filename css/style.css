@@ -78,6 +78,9 @@ input {
   text-align: center;
   box-sizing: border-box;
   border: 1px #55c57a solid; }
+  @media (max-width: 37.5em) {
+    input {
+      font-size: 16px; } }
 
 input:focus {
   outline: none; }
