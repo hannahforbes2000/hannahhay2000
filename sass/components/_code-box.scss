@@ -23,9 +23,9 @@
 .code-box-1 {
   border: 4px solid $color-bo-dark;
 
-  // @include respond(phone) {
-  //   width: 80%;
-  // }
+  @include respond(phone) {
+    width: 80%;
+  }
 
   &__img {
     display: block;
@@ -49,6 +49,10 @@
 .code-box-2 {
   border: 4px solid $color-beep-dark;
 
+  @include respond(phone) {
+    width: 80%;
+  }
+
   &__img {
     display: block;
     height: 100%;
@@ -69,6 +73,10 @@
 }
 .code-box-3 {
   border: 4px solid $color-bing-dark;
+
+  @include respond(phone) {
+    width: 80%;
+  }
 
   &__img {
     display: block;
@@ -91,6 +99,10 @@
 .code-box-4 {
   border: 4px solid $color-bang-dark;
 
+  @include respond(phone) {
+    width: 80%;
+  }
+
   &__img {
     display: block;
     height: 100%;
@@ -111,6 +123,10 @@
 }
 .code-box-5 {
   border: 4px solid $color-boop-dark;
+
+  @include respond(phone) {
+    width: 80%;
+  }
 
   &__img {
     display: block;
