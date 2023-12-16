@@ -21,6 +21,7 @@
 
   @include respond(phone) {
     width: 80%;
+    text-align: center;
   }
 
   &__img {
