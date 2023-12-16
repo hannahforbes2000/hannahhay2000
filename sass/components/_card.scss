@@ -32,6 +32,7 @@
 
     @include respond(phone) {
       width: 90%;
+      left: 20px;
     }
 
     &--front {
@@ -91,6 +92,7 @@
 
   &__picture {
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
     background-blend-mode: screen;
     // clip-path: polygon(0 0, 100 * 0, 100% 85%, 0 100%);

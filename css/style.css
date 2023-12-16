@@ -287,7 +287,8 @@ body {
     margin: 0 auto; }
     @media (max-width: 37.5em) {
       .card__side {
-        width: 90%; } }
+        width: 90%;
+        left: 20px; } }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
@@ -308,6 +309,7 @@ body {
     transform: rotateY(0); }
   .card__picture {
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
     background-blend-mode: screen;
     border-radius: 5px;
