@@ -342,6 +342,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 37.5em) {
+    .code-box {
+      flex-direction: column; } }
   .code-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 

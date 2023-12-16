@@ -11,6 +11,10 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
