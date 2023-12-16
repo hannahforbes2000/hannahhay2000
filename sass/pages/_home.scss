@@ -24,6 +24,7 @@
   );
 
   @include respond(phone) {
+    display:flex;
     padding: 10rem;
   }
 }
