@@ -13,6 +13,10 @@
 
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
+
+    @include respond(phone) {
+      transform: translateY(0rem);
+    }
   }
 }
 

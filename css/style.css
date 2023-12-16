@@ -262,7 +262,10 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 32rem;
-  margin-top: 50px; }
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   @media (max-width: 37.5em) {
     .card {
       display: flex;
@@ -280,7 +283,8 @@ body {
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    margin: 0 auto; }
     @media (max-width: 37.5em) {
       .card__side {
         width: 90%; } }
@@ -306,7 +310,8 @@ body {
     background-size: cover;
     height: 100%;
     background-blend-mode: screen;
-    border-radius: 5px; }
+    border-radius: 5px;
+    text-align: center; }
     .card__picture--1 {
       background-image: url(../img/bo.png); }
     .card__picture--2 {
@@ -354,6 +359,9 @@ body {
   align-items: center; }
   .code-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+    @media (max-width: 37.5em) {
+      .code-box:hover {
+        transform: translateY(0rem); } }
 
 .code-box-1 {
   border: 4px solid #612e98; }
