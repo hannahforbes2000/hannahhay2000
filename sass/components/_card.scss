@@ -18,6 +18,10 @@
     overflow: hidden;
     box-shadow: $code-box-shadow;
 
+    @include respond(phone) {
+      width: 90%;
+    }
+
     &--front {
       background-color: $color-white;
     }
