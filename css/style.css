@@ -266,7 +266,6 @@ body {
   @media (max-width: 37.5em) {
     .card {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center; } }
   .card__side {
