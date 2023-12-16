@@ -37,4 +37,9 @@
   background-color: $color-grey-light;
   padding: 5rem 0 5rem 0;
   text-align: center;
+  margin: 0 auto;
+
+  @include respond(phone) {
+    padding: 0;
+  }
 }

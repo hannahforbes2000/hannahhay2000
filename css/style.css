@@ -267,7 +267,9 @@ body {
     .card {
       display: flex;
       justify-content: center;
-      align-items: center; } }
+      align-items: center;
+      width: 90%;
+      margin: 0 auto; } }
   .card__side {
     height: 32rem;
     transition: all 0.8s ease;
@@ -655,6 +657,10 @@ body {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 2rem; } }
+      @media (max-width: 37.5em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 2rem; } }
     @media (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
@@ -729,4 +735,8 @@ body {
 .section-clues {
   background-color: #f7f7f7;
   padding: 5rem 0 5rem 0;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
+  @media (max-width: 37.5em) {
+    .section-clues {
+      padding: 0; } }
