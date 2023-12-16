@@ -9,6 +9,10 @@
     transition: all 0.2s;
     position: relative;
     font-size: 1.6rem;
+
+    @include respond(phone) {
+      font-size: 1rem;
+    }
   }
 
   &:hover {

@@ -43,6 +43,10 @@
 
     &--btn {
       width: 3rem;
+
+      @include respond(phone) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -69,6 +73,10 @@
 
     &--btn {
       width: 3rem;
+
+      @include respond(phone) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -94,6 +102,10 @@
 
     &--btn {
       width: 3rem;
+
+      @include respond(phone) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -119,6 +131,10 @@
 
     &--btn {
       width: 3rem;
+
+      @include respond(phone) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -144,6 +160,10 @@
 
     &--btn {
       width: 3rem;
+
+      @include respond(phone) {
+        font-size: 1rem;
+      }
     }
   }
 }
