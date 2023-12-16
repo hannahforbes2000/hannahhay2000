@@ -344,7 +344,7 @@ body {
   align-items: center; }
   @media (max-width: 37.5em) {
     .code-box {
-      padding: 5rem; } }
+      padding: 0 5rem; } }
   .code-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 

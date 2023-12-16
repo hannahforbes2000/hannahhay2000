@@ -16,7 +16,7 @@ function checkCode1() {
 function checkCodeA() {
   var code1 = document.querySelector(".code-box-1__popup--input").value;
   if (code1 === "2") {
-    document.querySelector(".code-box-1__img").src = "img/Bo1.png";
+    document.querySelector(".code-box-1__img").src = "img/bo1.png";
     document.querySelector(".code-box-1__img").style.display = "block";
     document.querySelector(".code-box-1__popup").style.display = "none";
   } else {
@@ -33,7 +33,7 @@ function checkCode2() {
 function checkCodeB() {
   var code1 = document.querySelector(".code-box-2__popup--input").value;
   if (code1 === "1") {
-    document.querySelector(".code-box-2__img").src = "img/Beep1.png";
+    document.querySelector(".code-box-2__img").src = "img/beep1.png";
     document.querySelector(".code-box-2__img").style.display = "block";
     document.querySelector(".code-box-2__popup").style.display = "none";
   } else {
@@ -50,7 +50,7 @@ function checkCode3() {
 function checkCodeC() {
   var code1 = document.querySelector(".code-box-3__popup--input").value;
   if (code1 === "3") {
-    document.querySelector(".code-box-3__img").src = "img/BING1.png";
+    document.querySelector(".code-box-3__img").src = "img/bing1.png";
     document.querySelector(".code-box-3__img").style.display = "block";
     document.querySelector(".code-box-3__popup").style.display = "none";
   } else {
@@ -84,7 +84,7 @@ function checkCode5() {
 function checkCodeE() {
   var code1 = document.querySelector(".code-box-5__popup--input").value;
   if (code1 === "7") {
-    document.querySelector(".code-box-5__img").src = "img/Boop1.png";
+    document.querySelector(".code-box-5__img").src = "img/boop1.png";
     document.querySelector(".code-box-5__img").style.display = "block";
     document.querySelector(".code-box-5__img").style.height = "80%";
     document.querySelector(".code-box-5__img").style.marginTop = "2.5rem";
