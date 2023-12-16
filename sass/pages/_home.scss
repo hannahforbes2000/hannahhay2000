@@ -24,7 +24,9 @@
   );
 
   @include respond(phone) {
+    display:flex;
     padding: 10rem;
+    background-color: #000;
   }
 }
 
