@@ -11,6 +11,10 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(phone) {
+    padding: 5rem;
+  }
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
