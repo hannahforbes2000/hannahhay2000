@@ -342,9 +342,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media (max-width: 37.5em) {
-    .code-box {
-      padding: 0 5rem; } }
   .code-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
@@ -711,6 +708,9 @@ body {
 .section-code {
   padding: 5rem 0;
   background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)); }
+  @media (max-width: 37.5em) {
+    .section-code {
+      padding: 10rem; } }
 
 .section-clues {
   background-color: #f7f7f7;
