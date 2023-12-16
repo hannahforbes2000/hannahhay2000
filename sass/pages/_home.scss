@@ -24,7 +24,10 @@
   );
 
   @include respond(phone) {
-    display:flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10rem;
     background-color: #000;
   }
